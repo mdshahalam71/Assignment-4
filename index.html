@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>assignment-4</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- fontawsome link------------------------------ -->
+    <script
+      src="https://kit.fontawesome.com/29b317fbd7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./image/logo.png" alt="" />
+      </div>
+      <section class="hero">
+        <h1>
+          Search Your <br />
+          Favorite Recipe
+        </h1>
+        <p>
+          A handful of simple ingredients typify the fresh, vibrant <br />
+          flavors of Greek cooking
+        </p>
+      </section>
+    </header>
+<!-- search container    -->
+     <div class="search-container">
+        
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search..."
+                autocomplete="off"
+            >
+            <div class="search-icon" id="search-icon" onclick="searchIcon()"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <h2>Latest Recipes</h2>
+        <div id="searchResults"></div>
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Searching recipes...</p>
+        </div>
+    </div>
+    
+    <div id="mealsList"></div>
+
+     
+    
+   <div id="mealModal" class="meal-modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">close</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <footer>Developed with love by Dk alam @ 2025</footer>
+    <a href="#" class="top"><i class="fa-solid fa-arrow-up"></i>.</a>
+       <script src="document.js"></script>
+  </body>
+</html>
